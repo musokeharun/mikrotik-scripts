@@ -1,4 +1,4 @@
-#script
+#!rsc by RouterOS
 
 :local profile "Daily";
 :local minUptome 0;
