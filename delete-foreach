@@ -1,0 +1,6 @@
+:foreach i in=[/ip hotspot user find where uptime>0 and profile="default"] do={
+    :local deleted [/ip hotspot user remove $i];
+    :log info "User account deleted $i $deleted"
+}
+
+:log info :timestamp . " Log for scheduled script"
